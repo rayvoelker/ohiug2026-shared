@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rapido / INN-Reach update — OH-IUG 2026 Conference Notes</title>
+  <meta name="description" content="Upcoming Sierra and Polaris releases for resource sharing, and the prioritized requirements list.">
+  <meta property="og:title" content="Rapido / INN-Reach update">
+  <meta property="og:description" content="Upcoming Sierra and Polaris releases for resource sharing, and the prioritized requirements list.">
+  
+  <meta property="og:url" content="https://rayvoelker.github.io/ohiug2026-shared/rapido-inn-reach-update.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="OH-IUG 2026 Conference Notes">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Rapido / INN-Reach update">
+  <meta name="twitter:description" content="Upcoming Sierra and Polaris releases for resource sharing, and the prioritized requirements list.">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="help" href="llms.txt" title="LLM site navigation">
+  
+</head>
+<body>
+
+  
+  <header class="site-header">
+    <h1 class="site-title"><a href="index.html">OH-IUG 2026 Conference Notes</a></h1>
+    <p class="site-subtitle">Ohio Innovative Users Group &middot; October 9, 2026</p>
+  </header>
+  
+
+  <nav>
+    <ul>
+      
+      <li><a href="index.html">Home</a></li>
+      
+      <li><a href="friday.html" class="active">Friday</a></li>
+      
+      <li><a href="follow-ups.html">Follow-ups</a></li>
+      
+    </ul>
+  </nav>
+
+  <div class="container">
+    
+<div class="breadcrumb"><a href="index.html">Home</a> / <a href="friday.html">Friday, 2026-10-09</a> / Rapido / INN-Reach update</div>
+
+    
+<div class="session-hero">
+  <h1>Rapido / INN-Reach update</h1>
+  <p class="hero-meta">Friday, 2026-10-09 &middot; 15:07</p>
+  
+  <div class="hero-tags">
+    <span class="tag-chip">Rapido</span><span class="tag-chip">INN-Reach</span><span class="tag-chip">Clarivate</span>
+  </div>
+  
+  
+  
+</div>
+
+
+
+<div class="card supplemental-banner">
+  <p>&#128221; <strong>These are Ray&rsquo;s personal notes from the session, not an authorized transcript.</strong> They reflect his interpretation and may contain errors or omissions &mdash; those are his, not the speaker&rsquo;s. Corrections, amendments, or takedown requests are welcome &mdash; <a href="https://github.com/rayvoelker/ohiug2026-shared/issues">open an issue</a>.</p>
+</div>
+
+
+
+
+<p>Clarivate-branded slides 5–6 from a separate deck; the speaker isn't in the photos. Rapido and INN-Reach
+are Clarivate's interlibrary lending (resource sharing, &quot;RS&quot;) systems.</p>
+<h2>Slide 5: Upcoming changes in Sierra and Polaris</h2>
+<h3>Sierra November 2026 (v6.7)</h3>
+<ul>
+<li>Modified <strong>Patron Checkout Limits</strong> parameter for use with INN-Reach and Rapido</li>
+<li>Fixed an issue causing Sierra Too Long reports for Rapido requests to display an incorrect &quot;Cannot
+connect to Central rapid&quot; message in the printed output</li>
+<li>Fixed an issue that could cause the Last Update column in Sierra's Rapido/INN-Reach tab to sort dates
+incorrectly</li>
+</ul>
+<h3>Polaris October 2026 (v8.2)</h3>
+<ul>
+<li>Added changes to compute due dates for Rapido items in borrowing ILS</li>
+<li>Fixed an issue with virtual patron creation for lending re-requests</li>
+<li>Added changes to truncate long titles on incoming requests</li>
+<li>Improved handling of duplicate requests to prevent processing errors and keep borrowing records accurate</li>
+</ul>
+<details class="slide-photo">
+<summary>Slide photo (photo 08, 3:07 PM)</summary>
+<img src="photos/photo-08.jpg" alt="Slide 5, Upcoming changes in Sierra and Polaris">
+</details>
+
+<h2>Slide 6: Prioritized requirements list</h2>
+<p>On the slide, the Status and Target cells sit slightly above their rows; the coloured row bands confirm
+the pairing below. &quot;Vega CRI&quot;, &quot;GTI&quot; and &quot;CDI&quot; are as written on the slide (CDI is Clarivate's Central
+Discovery Index).</p>
+<table>
+<thead>
+<tr>
+  <th>#</th>
+  <th>Issue</th>
+  <th>Status</th>
+  <th>Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td>Ability to specify format when placing request</td>
+  <td>In development</td>
+  <td>Original: November<br>Revised: January '27</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>Titles missing in Vega</td>
+  <td>In development</td>
+  <td>Original: November<br>Revised: December</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>Availability display in Vega CRI</td>
+  <td>In development</td>
+  <td>October</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>Due dates include hold shelf and shipping</td>
+  <td>Deployed for Rapido, Polaris, Koha</td>
+  <td>September 22<br>coming H1 '27 for Sierra</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>Request multiple items on same title</td>
+  <td>Analysis</td>
+  <td>TBD</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>Expired requests</td>
+  <td>Deployed</td>
+  <td>June 7 Rapido release</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>Suppress from participation</td>
+  <td>In development</td>
+  <td>October: Polaris 8.1<br>TBD: Sierra<br>TBD: Koha</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td>Suppress from display</td>
+  <td>Analysis</td>
+  <td>TBD</td>
+</tr>
+<tr>
+  <td>9</td>
+  <td>Vega Custom URL</td>
+  <td>Analysis</td>
+  <td>TBD</td>
+</tr>
+</tbody>
+</table>
+<h3>What each one means</h3>
+<p>The Description column from the slide, by row number.</p>
+<ol>
+<li><strong>Ability to specify format when placing request.</strong> Reported by Clermont. Requested 3 items for the same ISBN and got 3 different formats.</li>
+<li><strong>Titles missing in Vega.</strong> Some titles sent by the GTI get rolled up with an eBook in the CDI, and as such get filtered out of the results in Vega.</li>
+<li><strong>Availability display in Vega CRI.</strong> With INN-Reach, holdings and availability information are displayed in Encore and WebPAC.</li>
+<li><strong>Due dates include hold shelf and shipping.</strong> Due dates are calculated by Rapido when the lender ships the item and include shipping and hold shelf time. Patrons can check out two items on the same day with different due dates.</li>
+<li><strong>Request multiple items on same title.</strong> Possible for staff in Rapido; not in Vega</li>
+<li><strong>Expired requests.</strong> The expiry time pod setting determines how many days a request remains with a lender before automatically moving to a new lender. Rapido is not notifying the current lender before moving the request to a new lender. Results in multiple items shipped for the same request. Workaround is for lending site staff to cancel a request they cannot fill.</li>
+<li><strong>Suppress from participation.</strong> Ability to not lend items which are lendable in the ILS but not in RS (for example new material)</li>
+<li><strong>Suppress from display.</strong> Libraries would like to suppress in Rapido &amp; Vega groups of records which aren't suppressed in the ILS</li>
+<li><strong>Vega Custom URL.</strong> Customer could specify a custom URL for Vega CRI</li>
+</ol>
+<details class="slide-photo">
+<summary>Slide photo (photo 09, 3:12 PM)</summary>
+<img src="photos/photo-09.jpg" alt="Slide 6, Prioritized requirements list">
+</details>
+
+
+
+
+
+  </div>
+
+  <div class="footer">
+    
+    <div class="footer-text">
+      
+      <a href="https://github.com/rayvoelker/ohiug2026-shared">View on GitHub</a>
+       &middot; &#9999;&#65039; <a href="https://github.com/rayvoelker/ohiug2026-shared/issues/new?title=Correction:+Rapido%20/%20INN-Reach%20update&body=Page:+rapido-inn-reach-update.html%0A%0ACorrection:">Suggest a correction</a>
+    </div>
+  </div>
+
+</body>
+</html>

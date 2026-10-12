@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHPL Lake: The Boring Parts — OH-IUG 2026 Conference Notes</title>
+  <meta name="description" content="Keeping our own copy of the library's data, securely, on one machine we already own.">
+  <meta property="og:title" content="CHPL Lake: The Boring Parts">
+  <meta property="og:description" content="Keeping our own copy of the library's data, securely, on one machine we already own.">
+  
+  <meta property="og:url" content="https://rayvoelker.github.io/ohiug2026-shared/boring-parts.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="OH-IUG 2026 Conference Notes">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CHPL Lake: The Boring Parts">
+  <meta name="twitter:description" content="Keeping our own copy of the library's data, securely, on one machine we already own.">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="help" href="llms.txt" title="LLM site navigation">
+  
+</head>
+<body>
+
+  
+  <header class="site-header">
+    <h1 class="site-title"><a href="index.html">OH-IUG 2026 Conference Notes</a></h1>
+    <p class="site-subtitle">Ohio Innovative Users Group &middot; October 9, 2026</p>
+  </header>
+  
+
+  <nav>
+    <ul>
+      
+      <li><a href="index.html">Home</a></li>
+      
+      <li><a href="friday.html" class="active">Friday</a></li>
+      
+      <li><a href="follow-ups.html">Follow-ups</a></li>
+      
+    </ul>
+  </nav>
+
+  <div class="container">
+    
+<div class="breadcrumb"><a href="index.html">Home</a> / <a href="friday.html">Friday, 2026-10-09</a> / CHPL Lake: The Boring Parts</div>
+
+    
+<div class="session-hero">
+  <h1>CHPL Lake: The Boring Parts</h1>
+  <p class="hero-meta"><strong>Ray Voelker</strong> &middot; Friday, 2026-10-09 &middot; 11:30 &middot; Room 1A</p>
+  
+  <div class="hero-tags">
+    <span class="tag-chip">CHPL</span><span class="tag-chip">data lake</span><span class="tag-chip">Sierra</span>
+  </div>
+  
+  <p class="hero-verdict">Keeping our own copy of the library's data, securely, on one machine we already own.</p>
+  
+</div>
+
+
+
+
+
+<div class="card">
+  <p><strong>Links:</strong>
+    <a href="https://rayvoelker.github.io/2026-10/boring-parts/">Slides</a>
+  </p>
+</div>
+
+
+<p>My talk. The slides are at
+<a href="https://rayvoelker.github.io/2026-10/boring-parts/">rayvoelker.github.io/2026-10/boring-parts</a>, which
+is also where the QR code on the title slide points.</p>
+<p>The room schedule listed this session as &quot;Building a Historical Date Warehouse&quot;. The title above is the
+one I submitted.</p>
+<h2>Abstract (as submitted)</h2>
+<blockquote>
+<p>Sierra, like all ILS-shaped systems, is built to run the library right now: it updates
+records in place and lets the past go. Since August 2023 we've captured 51M circulation
+transactions covering 2.9M distinct items. About 495k of those items, roughly one in six,
+no longer exist in the catalog today. That's correct behavior for an operational system,
+but it isn't a foundation for assessing collections, patron activity, or e-resource use.</p>
+<p>So we keep our own copy beside it. Every source is captured on a schedule, never edited
+after the fact, and refined into answers we can rebuild from scratch at any time. Personal
+details come off on the way in rather than being scrubbed out later, the raw copy is
+encrypted, and there's no cloud bill for the data and no vendor to leave.</p>
+<p>I'll cover what we capture, how often, what it costs to run, and two questions the live
+catalog structurally can't answer. First, how long items actually spend in transit: Sierra
+knows an item is in transit but not the journey, so we rebuilt 403,490 of them (median 39
+hours door to door). Second, where collection pressure is building, which only exists when
+you can compare this month's shelves to last month's.</p>
+</blockquote>
+
+
+
+
+  </div>
+
+  <div class="footer">
+    
+    <div class="footer-text">
+      
+      <a href="https://github.com/rayvoelker/ohiug2026-shared">View on GitHub</a>
+       &middot; &#9999;&#65039; <a href="https://github.com/rayvoelker/ohiug2026-shared/issues/new?title=Correction:+CHPL%20Lake%3A%20The%20Boring%20Parts&body=Page:+boring-parts.html%0A%0ACorrection:">Suggest a correction</a>
+    </div>
+  </div>
+
+</body>
+</html>

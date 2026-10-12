@@ -1,0 +1,28 @@
+# OH-IUG 2026 Conference Notes
+> https://rayvoelker.github.io/ohiug2026-shared
+
+Personal conference session notes.
+
+## Pages
+- [OH-IUG 2026 Conference Notes](index.html): Ray's personal notes from the Ohio Innovative Users Group day, October 9, 2026.
+
+## Day Overviews
+- [Friday, October 9](friday.html): Clarivate's Sierra and Vega roadmap, Rapido requirements, and the SearchOhio transition.
+
+## Sessions
+- [Clarivate update](clarivate-update.html): Sierra roadmap, Vega Reports for Sierra timeline, accessibility (VPAT) status, Vega Reports for Discover. [friday]
+- [Automating Web-Based ILS Tasks](automating-web-based-ils-tasks.html): Browser automation against the Sierra web Administration Application. [friday]
+- [CHPL Lake: The Boring Parts](boring-parts.html): Keeping our own copy of the library's data, securely, on one machine we already own. [friday]
+- [SearchOhio Vega staff demo](searchohio-vega-staff-demo.html): Live demo of the staff side of SearchOhio's Vega catalog. [friday]
+- [Rapido / INN-Reach update](rapido-inn-reach-update.html): Upcoming Sierra and Polaris releases for resource sharing, and the prioritized requirements list. [friday]
+- [SearchOhio update: Transition to State Library Administration](searchohio-transition.html): SearchOhio moves to State Library of Ohio administration: transition milestones. [friday]
+
+## Guides
+- [Suggested follow-ups](follow-ups.html): Questions worth raising with Clarivate. Claude's suggestions, not Ray's notes.
+
+## Corrections & Contributions
+
+Found an error or want to suggest a correction?
+
+- **File an issue:** https://github.com/rayvoelker/ohiug2026-shared/issues/new?title=Correction
+- **Browse open issues:** https://github.com/rayvoelker/ohiug2026-shared/issues

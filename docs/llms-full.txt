@@ -1,0 +1,324 @@
+# OH-IUG 2026 Conference Notes
+> https://rayvoelker.github.io/ohiug2026-shared
+
+Personal conference session notes.
+
+## Pages
+- [OH-IUG 2026 Conference Notes](index.html): Ray's personal notes from the Ohio Innovative Users Group day, October 9, 2026.
+
+## Day Overviews
+- [Friday, October 9](friday.html): Clarivate's Sierra and Vega roadmap, Rapido requirements, and the SearchOhio transition.
+
+## Sessions
+- [Clarivate update](clarivate-update.html): Sierra roadmap, Vega Reports for Sierra timeline, accessibility (VPAT) status, Vega Reports for Discover. [friday]
+- [Automating Web-Based ILS Tasks](automating-web-based-ils-tasks.html): Browser automation against the Sierra web Administration Application. [friday]
+- [CHPL Lake: The Boring Parts](boring-parts.html): Keeping our own copy of the library's data, securely, on one machine we already own. [friday]
+- [SearchOhio Vega staff demo](searchohio-vega-staff-demo.html): Live demo of the staff side of SearchOhio's Vega catalog. [friday]
+- [Rapido / INN-Reach update](rapido-inn-reach-update.html): Upcoming Sierra and Polaris releases for resource sharing, and the prioritized requirements list. [friday]
+- [SearchOhio update: Transition to State Library Administration](searchohio-transition.html): SearchOhio moves to State Library of Ohio administration: transition milestones. [friday]
+
+## Guides
+- [Suggested follow-ups](follow-ups.html): Questions worth raising with Clarivate. Claude's suggestions, not Ray's notes.
+
+## Corrections & Contributions
+
+Found an error or want to suggest a correction?
+
+- **File an issue:** https://github.com/rayvoelker/ohiug2026-shared/issues/new?title=Correction
+- **Browse open issues:** https://github.com/rayvoelker/ohiug2026-shared/issues
+
+---
+
+# Automating Web-Based ILS Tasks
+URL: automating-web-based-ils-tasks.html
+Description: Browser automation against the Sierra web Administration Application.
+
+Presented by Wes Osborn (Executive Director, Central Library Consortium, per clcohio.org/home/staff) and Bob Gaydos (ILS Administrator, Stark County District Library, per his LinkedIn profile). The demo opened Stark Library's Sierra web Administration
+Application login page ("Welcome to the Administration Application") with Microsoft Edge WebDriver, a
+browser-automation tool, open in another tab.
+
+<details class="slide-photo">
+<summary>Slide photo (photo 07, 10:26)</summary>
+<img src="photos/photo-07.jpg" alt="Photo 07">
+</details>
+
+---
+
+# CHPL Lake: The Boring Parts
+URL: boring-parts.html
+Description: Keeping our own copy of the library's data, securely, on one machine we already own.
+
+My talk. The slides are at
+[rayvoelker.github.io/2026-10/boring-parts](https://rayvoelker.github.io/2026-10/boring-parts/), which
+is also where the QR code on the title slide points.
+
+The room schedule listed this session as "Building a Historical Date Warehouse". The title above is the
+one I submitted.
+
+## Abstract (as submitted)
+
+> Sierra, like all ILS-shaped systems, is built to run the library right now: it updates
+> records in place and lets the past go. Since August 2023 we've captured 51M circulation
+> transactions covering 2.9M distinct items. About 495k of those items, roughly one in six,
+> no longer exist in the catalog today. That's correct behavior for an operational system,
+> but it isn't a foundation for assessing collections, patron activity, or e-resource use.
+>
+> So we keep our own copy beside it. Every source is captured on a schedule, never edited
+> after the fact, and refined into answers we can rebuild from scratch at any time. Personal
+> details come off on the way in rather than being scrubbed out later, the raw copy is
+> encrypted, and there's no cloud bill for the data and no vendor to leave.
+>
+> I'll cover what we capture, how often, what it costs to run, and two questions the live
+> catalog structurally can't answer. First, how long items actually spend in transit: Sierra
+> knows an item is in transit but not the journey, so we rebuilt 403,490 of them (median 39
+> hours door to door). Second, where collection pressure is building, which only exists when
+> you can compare this month's shelves to last month's.
+
+---
+
+# Clarivate update
+URL: clarivate-update.html
+Description: Sierra roadmap, Vega Reports for Sierra timeline, accessibility (VPAT) status, Vega Reports for Discover.
+
+Carey Miller, Product Sales Manager, Innovative (Clarivate). Deck: "IUG Regional Deck 2026", 76 slides.
+Title per MLA partner page milibraries.org/sp-innovative.
+
+## Slide 22: The Sierra Team
+
+- Mike Dicus, Manager, Product Mgmt
+- Ryan Long, Sr. Director, Engineering
+- Doug Randall, Director, Engineering
+- Justin Chen, Manager, Engineering
+- Anthony Quinn, Manager, User Experience
+
+<details class="slide-photo">
+<summary>Slide photo (photo 03, 9:47)</summary>
+<img src="photos/photo-03.jpg" alt="Slide 22, The Sierra Team: five headshots with names and titles">
+</details>
+
+## Slide 26: Vega Reports for Sierra, next steps
+
+"Preparing for early access in Q1 2027."
+
+| When | Milestone | On the slide |
+|---|---|---|
+| November 2026 | Sierra survey | "We expect to share the Sierra survey in November." |
+| Q1 2027 | Early access | "We are targeting the start of early access for Vega Reports for Sierra." |
+| Q2 2027 | Broader rollout | "We are aiming to begin a broader rollout following the early access phase." |
+
+Ray's live note said "Vega Reports Q2 2027". That's the broader rollout; early access starts in Q1.
+
+<details class="slide-photo">
+<summary>Slide photo (photo 04, 9:50)</summary>
+<img src="photos/photo-04.jpg" alt="Slide 26, Vega Reports for Sierra: next steps">
+</details>
+
+## Slide 40: Accessibility
+
+Links to Clarivate's "Product accessibility" page.
+
+> "With the Spring 2027 Title II requirements coming, we want you to know where each of our products
+> stands with up to date VPATs, as well as customization guidelines. We will continue to update you as
+> more are added over the next few months."
+
+Title II is the Americans with Disabilities Act rule for public entities' web content. A VPAT is a
+vendor's standard accessibility conformance report. A blank cell is blank on the slide.
+
+| Product | VPAT available | Customization guidelines |
+|---|---|---|
+| Discover | Yes | Yes |
+| LX Starter | Yes | N/A |
+| Reports & Analytics | N/A | N/A |
+| Promote | Yes | |
+| Interact | Coming 2027 | Coming 2027 |
+| WebBuilder | Yes | |
+| Program | Coming Q4 | Coming Q4 |
+| Mobile App | Yes | Coming Q4 |
+| Mobile Worklists | N/A | N/A |
+
+<details class="slide-photo">
+<summary>Slide photo (photo 05, 9:55)</summary>
+<img src="photos/photo-05.jpg" alt="Slide 40, Accessibility: product VPAT table">
+</details>
+
+## Slide 44: Vega Reports, delivered for Discover on April 7th
+
+- A unified modern BI platform
+- Powerful user-friendly insights powered by AI
+- **Connected to our Data Lakehouse unifying all portfolio data and 3rd parties**
+- Integrated into our App Launcher and Vega Connect (only one sign on)
+- Vega Discover data already available
+
+Screenshot tabs: Visitor Statistics / Search Statistics / Marketing Statistics.
+
+Early access partners: STELLA, New York Public Library, Mid-Hudson Library System, Phoenix Public Library.
+
+<details class="slide-photo">
+<summary>Slide photo (photo 06, 9:58)</summary>
+<img src="photos/photo-06.jpg" alt="Slide 44, Vega Reports delivered for Discover">
+</details>
+
+---
+
+# Suggested follow-ups
+URL: follow-ups.html
+Description: Questions worth raising with Clarivate. Claude's suggestions, not Ray's notes.
+
+These are Claude's suggestions, not Ray's notes.
+
+- Vega Reports sits on a Clarivate "Data Lakehouse unifying all portfolio data and 3rd parties."
+  Worth asking whether customers can query or export that data, or only see dashboards. It overlaps
+  directly with our own data lake.
+- The Sierra survey goes out in November 2026. That's the place to ask about reporting and data access.
+
+---
+
+# Friday, October 9
+URL: friday.html
+Description: Clarivate's Sierra and Vega roadmap, Rapido requirements, and the SearchOhio transition.
+
+Session times are the scheduled slot where the room schedule (photo 02) lists one. Otherwise they are
+the time the first photo of that session was taken, not when the session started.
+
+- [My talk: CHPL Lake, The Boring Parts](boring-parts.html) ([slides](https://rayvoelker.github.io/2026-10/boring-parts/))
+- [Suggested follow-ups](follow-ups.html)
+
+<details class="slide-photo">
+<summary>Room schedule slide (photo 02, 9:31)</summary>
+<img src="photos/photo-02.jpg" alt="Room assignments slide">
+</details>
+
+---
+
+# OH-IUG 2026 Conference Notes
+URL: index.html
+Description: Ray's personal notes from the Ohio Innovative Users Group day, October 9, 2026.
+
+Ray's live notes from **OH-IUG 2026**, plus transcriptions of 12 phone photos of the slides.
+**Q** marks something a speaker said; **Slide** marks text copied from a photo. Quoted slide text is
+verbatim, including the slides' own wording and typos.
+
+These are one attendee's notes, not transcripts or an official record. Errors and omissions are Ray's,
+not the speakers'.
+
+---
+
+# Rapido / INN-Reach update
+URL: rapido-inn-reach-update.html
+Description: Upcoming Sierra and Polaris releases for resource sharing, and the prioritized requirements list.
+
+Clarivate-branded slides 5–6 from a separate deck; the speaker isn't in the photos. Rapido and INN-Reach
+are Clarivate's interlibrary lending (resource sharing, "RS") systems.
+
+## Slide 5: Upcoming changes in Sierra and Polaris
+
+### Sierra November 2026 (v6.7)
+
+- Modified **Patron Checkout Limits** parameter for use with INN-Reach and Rapido
+- Fixed an issue causing Sierra Too Long reports for Rapido requests to display an incorrect "Cannot
+  connect to Central rapid" message in the printed output
+- Fixed an issue that could cause the Last Update column in Sierra's Rapido/INN-Reach tab to sort dates
+  incorrectly
+
+### Polaris October 2026 (v8.2)
+
+- Added changes to compute due dates for Rapido items in borrowing ILS
+- Fixed an issue with virtual patron creation for lending re-requests
+- Added changes to truncate long titles on incoming requests
+- Improved handling of duplicate requests to prevent processing errors and keep borrowing records accurate
+
+<details class="slide-photo">
+<summary>Slide photo (photo 08, 3:07 PM)</summary>
+<img src="photos/photo-08.jpg" alt="Slide 5, Upcoming changes in Sierra and Polaris">
+</details>
+
+## Slide 6: Prioritized requirements list
+
+On the slide, the Status and Target cells sit slightly above their rows; the coloured row bands confirm
+the pairing below. "Vega CRI", "GTI" and "CDI" are as written on the slide (CDI is Clarivate's Central
+Discovery Index).
+
+| # | Issue | Status | Target |
+|---|---|---|---|
+| 1 | Ability to specify format when placing request | In development | Original: November<br>Revised: January '27 |
+| 2 | Titles missing in Vega | In development | Original: November<br>Revised: December |
+| 3 | Availability display in Vega CRI | In development | October |
+| 4 | Due dates include hold shelf and shipping | Deployed for Rapido, Polaris, Koha | September 22<br>coming H1 '27 for Sierra |
+| 5 | Request multiple items on same title | Analysis | TBD |
+| 6 | Expired requests | Deployed | June 7 Rapido release |
+| 7 | Suppress from participation | In development | October: Polaris 8.1<br>TBD: Sierra<br>TBD: Koha |
+| 8 | Suppress from display | Analysis | TBD |
+| 9 | Vega Custom URL | Analysis | TBD |
+
+### What each one means
+
+The Description column from the slide, by row number.
+
+1. **Ability to specify format when placing request.** Reported by Clermont. Requested 3 items for the same ISBN and got 3 different formats.
+2. **Titles missing in Vega.** Some titles sent by the GTI get rolled up with an eBook in the CDI, and as such get filtered out of the results in Vega.
+3. **Availability display in Vega CRI.** With INN-Reach, holdings and availability information are displayed in Encore and WebPAC.
+4. **Due dates include hold shelf and shipping.** Due dates are calculated by Rapido when the lender ships the item and include shipping and hold shelf time. Patrons can check out two items on the same day with different due dates.
+5. **Request multiple items on same title.** Possible for staff in Rapido; not in Vega
+6. **Expired requests.** The expiry time pod setting determines how many days a request remains with a lender before automatically moving to a new lender. Rapido is not notifying the current lender before moving the request to a new lender. Results in multiple items shipped for the same request. Workaround is for lending site staff to cancel a request they cannot fill.
+7. **Suppress from participation.** Ability to not lend items which are lendable in the ILS but not in RS (for example new material)
+8. **Suppress from display.** Libraries would like to suppress in Rapido & Vega groups of records which aren't suppressed in the ILS
+9. **Vega Custom URL.** Customer could specify a custom URL for Vega CRI
+
+<details class="slide-photo">
+<summary>Slide photo (photo 09, 3:12 PM)</summary>
+<img src="photos/photo-09.jpg" alt="Slide 6, Prioritized requirements list">
+</details>
+
+---
+
+# SearchOhio update: Transition to State Library Administration
+URL: searchohio-transition.html
+Description: SearchOhio moves to State Library of Ohio administration: transition milestones.
+
+Jay Miley, Director of Consortial Services, State Library of Ohio (jmiley@library.ohio.gov). Title slide:
+"SearchOhio Update: Transition to State Library Administration".
+
+<details class="slide-photo">
+<summary>Title slide (photo 11, 3:32 PM)</summary>
+<img src="photos/photo-11.jpg" alt="Title slide: SearchOhio Update, Transition to State Library Administration, Jay Miley">
+</details>
+
+## Project Background: key transition milestones
+
+| When | Milestone |
+|---|---|
+| Dec 2025 | State Library & Westerville Public Library talks begin. |
+| Feb 17, 2026 | Westerville Board approves plan. |
+| Mar 19, 2026 | State Library Board approves plan. |
+| Mar 26, 2026 | Future of SearchOhio Directors Meetings Begin |
+
+<details class="slide-photo">
+<summary>Slide photo (photo 12, 3:33 PM)</summary>
+<img src="photos/photo-12.jpg" alt="Project Background: key transition milestones timeline">
+</details>
+
+Photo 10 (3:32 PM) is an earlier, cropped shot of the same title slide; it adds nothing and is not shown.
+
+---
+
+# SearchOhio Vega staff demo
+URL: searchohio-vega-staff-demo.html
+Description: Live demo of the staff side of SearchOhio's Vega catalog.
+
+Live demo of the staff side of SearchOhio's Vega catalog, during the forums block. The presenter's
+browser showed a Westerville Public Library bookmark.
+
+## What was on screen
+
+- **Address:** `searchohio.na5.iiivega.com/staff`, with staff sign-in through Vega's single sign-on page.
+- **Search:** "(The Wee Free Men) AND (Pratchett, Terry,)" returned 20 results.
+- **Banner:** "You are browsing Interlibrary Loan materials. Use the return to catalog link to go back to
+  your local catalog."
+- **Format filter counts** (read from the photo): Book 8, Spoken Word Recording 8, Compact Disc 2.
+
+<details class="slide-photo">
+<summary>Screen photo (photo 01, 2:33 PM)</summary>
+<img src="photos/photo-01.jpg" alt="Vega staff search results for The Wee Free Men, with the Interlibrary Loan banner">
+</details>
+
+---
